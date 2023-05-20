@@ -1,0 +1,140 @@
+.devcom {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--color-footer);
+  background: -moz-radial-gradient(
+    circle at 100% -100%,
+    hsl(210, 56%, 10%) 25%,
+    rgb(233, 238, 243) 85%,
+    rgb(208, 211, 213) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #dae5f0 25%,
+    rgb(207, 212, 216) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #8ba1b8 25%,
+    rgb(56, 64, 73) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #a2c1e1 25%,
+    rgb(39, 57, 75) 85%,
+    rgb(47, 60, 73) 100%
+  );
+  background: radial-gradient(
+    circle at 30% -100%,
+    #98a3af 25%,
+    rgb(47, 73, 84) 85%,
+    rgb(177, 205, 207) 100%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(48, 39, 39, 0.25));
+}
+
+.devcom-feature {
+  display:contents;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(55, 46, 46);
+}
+
+/* Customizing feature component as per needs */
+.devcom-feature .devcom-container__feature {
+  margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.devcom-feature .devcom-container_feature-text {
+  max-width: 700px;
+}
+
+.devcom-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 2rem;
+  color: rgb(44, 32, 32);
+}
+
+.devcom-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  max-width: 610px;
+}
+
+.devcom-heading p {
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+.devcom-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.devcom-container .devcom-container__feature {
+  flex: 1;
+  margin: 2rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.devcom-container .devcom-container_feature-text {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .devcom-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .devcom-heading p {
+    margin-top: 1rem;
+ 
+  }
+}
+
+@media screen and (max-width: 650px) {
+/* Customizing feature component as per needs */
+.devcom-feature .devcom-container__feature {
+flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.devcom-feature .devcom-container_feature-text {
+margin-top: 0.5rem;
+}
+
+.devcom-heading h1 {
+font-size: 28px;
+line-height: 40px;
+}
+}
+
+@media screen and (max-width: 350px) {
+/* Customizing feature component as per needs */
+.devcom-container .devcom-container__feature {
+margin: 1rem 0;
+min-width: 100%;
+}
+}
+

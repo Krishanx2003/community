@@ -1,0 +1,148 @@
+/* Testimonial.css */
+
+/* Outer container */
+div.MyApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  /* Divider section */
+  div.MyApp > div {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+  
+  /* Left section */
+  div.MyApp > div > div:first-child {
+    width: 100%;
+    background-color: white;
+    height: 100%;
+  }
+  
+  /* Right section */
+  div.MyApp > div > div:last-child {
+    width: 100%;
+    margin-left: 16px;
+    background-color: #f2f2f2;
+    height: 100%;
+  }
+  
+  /* Carousel container */
+  div.MyApp > div:last-child {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Slider container */
+  div.MyApp Slider {
+    position: relative;
+  }
+  
+  /* Slide styles */
+  div.MyApp Slider div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.MyApp Slider div div img:first-child {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Testimonial text */
+  div.MyApp Slider div div div {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  div.MyApp Slider div div div h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  div.MyApp Slider div div div p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonial author */
+  div.MyApp Slider div div div:last-child {
+    text-align: center;
+  }
+  
+  div.MyApp Slider div div div:last-child p {
+    font-size: 14px;
+  }
+  
+  /* Slider navigation buttons */
+  div.MyApp Slider > div:last-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  div.MyApp Slider > div:last-child button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  div.MyApp Slider > div:last-child button img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    div.MyApp {
+      padding: 10px;
+    }
+  
+    div.MyApp > div {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  
+    div.MyApp > div > div:last-child {
+      margin-left: 0;
+    }
+  
+    div.MyApp > div:last-child {
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    div.MyApp Slider div div div h1 {
+      font-size: 16px;
+    }
+  
+    div.MyApp Slider div div div p {
+      font-size: 14px;
+    }
+  
+    div.MyApp Slider div div div:last-child p {
+      font-size: 12px;
+    }
+  }
+  

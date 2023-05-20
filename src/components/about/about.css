@@ -1,0 +1,103 @@
+/* about.css */
+
+
+.about-page {
+    text-align: center;
+    padding: 120px;
+    background: var(--color-footer);
+    background: -moz-radial-gradient(
+      circle at 100% -100%,
+      hsl(210, 56%, 10%) 25%,
+      rgb(233, 238, 243) 85%,
+      rgb(208, 211, 213) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle at 30% -100%,
+      #dae5f0 25%,
+      rgb(207, 212, 216) 85%,
+      rgba(27, 120, 222, 1) 100%
+    );
+    background: -o-radial-gradient(
+      circle at 30% -100%,
+      #8ba1b8 25%,
+      rgb(56, 64, 73) 85%,
+      rgba(27, 120, 222, 1) 100%
+    );
+    background: -ms-radial-gradient(
+      circle at 30% -100%,
+      #a2c1e1 25%,
+      rgb(39, 57, 75) 85%,
+      rgb(47, 60, 73) 100%
+    );
+    background: radial-gradient(
+      circle at 30% -100%,
+      #98a3af 25%,
+      rgb(233, 240, 239) 85%,
+      rgb(123, 112, 112) 100%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(48, 39, 39, 0.25));
+  }
+
+  
+  
+  .about-page h1 {
+    font-size: 50px;
+    color: #343333;
+  }
+  
+  .about-page p {
+    font-size: 25px;
+    padding-top: 30px;
+    margin: auto;
+
+  }
+  
+  .about-page h2 {
+    font-size: 45px;
+    padding-top: 40px;
+    color: #343333;
+  }
+  
+  .team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    width: 200px;
+    margin: 60px;
+  }
+  
+  .team-member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .team-member-details {
+    margin-top: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #343333;
+    font-size: 20px;
+  }
+  
+  /* Media Queries for Responsive Styling */
+  
+  @media (max-width: 768px) {
+    .team-member {
+      width: 150px;
+    }
+  }
+  
