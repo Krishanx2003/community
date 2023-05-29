@@ -104,12 +104,12 @@
 
 .footer-links_logo {
   display: flex;
-  flex-direction: column;
+  flex-direction:row-reverse;
 }
 
 .footer-links_logo img {
-  width: 150.56px;
-  height: 100.02px;
+  width: 100px;
+  height: 190px;
   margin-bottom: 10px;
 }
 

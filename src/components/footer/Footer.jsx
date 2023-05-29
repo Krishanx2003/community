@@ -1,5 +1,6 @@
 import React from 'react';
-import Dev from '../../assets/Dev.png';
+import { Link } from 'react-router-dom';
+import we from '../../assets/we.png';
 import './footer.css';
 
 const Footer = () => (
@@ -14,15 +15,14 @@ const Footer = () => (
 
     <div className="footer-links">
       <div className="footer-links_logo">
-        <img src={Dev} alt="logo" />
+        <img src={we} alt="logo" />
         <p>@2023 .  <br /> All Rights Reserved</p>
       </div>
       <div className="footer-links_div">
-        <h4>Nexus</h4>
-        <p>Community</p>
-        <p>Events</p>
-        <p>About</p>
-        <p>Career</p>
+        <h4>Webuildcomm</h4>
+      <p> <Link to="/community">Community</Link></p> 
+       <p>  <Link to="/events">Events</Link></p> 
+       <p>   <Link to="/about">About</Link></p> 
       </div>
       <div className="footer-links_div">
         <h4>Social Media</h4>
@@ -39,7 +39,7 @@ const Footer = () => (
     </div>
 
     <div className="footer-copyright">
-      <p>@2023 Nexus. All rights reserved.</p>
+      <p>@2023 Webuildcomm. All rights reserved.</p>
     </div>
   </div>
 );

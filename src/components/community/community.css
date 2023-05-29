@@ -1,81 +1,105 @@
+/* community.css */
 /* Styling for the CommunityContent component */
 
 /* Overall container styles */
 .community-content {
-    display: flex;
-    align-items: center;
-    padding: 90px;
-    justify-content: center;
-    font-size: 20px;
-  }
-  .community-content h1{
-    font-size: 60px;
-   
-    margin: right 2px;
-  }
-  
-  /* Box styles for each section */
-  .section-box {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 40px;
-    width: 30%;
-    max-width: 600px;
-    background-color: #9a8383;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Heading styles */
-  .section-box h2 {
-    margin-top: 0;
-  }
-  
-  /* Paragraph styles */
-  .section-box p {
-    margin-bottom: 0;
-    justify-content: center;
-  }
-  
-  /* Section wrapper styles */
-  .Section-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 90px;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #d8cccc;
+}
+
+.community-content h1 {
+  font-size: 60px;
+  margin-right: 2px;
+}
+
+/* Box styles for each section */
+.section-box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 30%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+/* Heading styles */
+.section-box h2 {
+  margin-top: 0;
+}
+
+/* Paragraph styles */
+.section-box p {
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+/* Section wrapper styles */
+.Section-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  width: 80%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .community-content {
+    flex-direction: column;
+    align-items: stretch;
     padding: 20px;
-    width: 80%;
   }
- 
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    .community-content {
-      flex-direction: column;
-      align-items: stretch;
-      padding: 20px;
-    }
-  
-    .section-box {
-      width: 100%;
-    }
-  
-    .Section-boxes {
-      width: 100%;
-    }
-  }
-  
-  /* Hover effect */
-  .section-box:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Image styles */
-  .image {
+
+  .section-box {
     width: 100%;
-    height: auto;
-    margin-bottom: 10px;
   }
-  
+
+  .Section-boxes {
+    width: 100%;
+  }
+}
+
+/* Hover effect */
+.section-box:hover {
+  transform: scale(1.05);
+}
+
+/* Image styles */
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Custom card colors */
+.section-box:nth-child(1) {
+  background-color: #ffcccc; /* Change the background color for the first card */
+}
+
+.section-box:nth-child(2) {
+  background-color: #ccffcc; /* Change the background color for the second card */
+}
+
+.section-box:nth-child(3) {
+  background-color: #b8b8e2; /* Change the background color for the third card */
+}
+
+.section-box:nth-child(4) {
+  background-color: #9c9191; /* Change the background color for the first card */
+}
+
+.section-box:nth-child(5) {
+  background-color: #a2d3a2; /* Change the background color for the second card */
+}
+
+.section-box:nth-child(6) {
+  background-color: #bdbde6; /* Change the background color for the third card */
+}

@@ -1,0 +1,35 @@
+/* Communityimg.css */
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px); /* Adjust the distance as needed */
+    }
+  }
+  
+  /* Styles for the parent container */
+  .Community-container {
+    padding-top: 80px;
+    /* Add your styles for the parent container here */
+  }
+  
+  /* Styles for the image container */
+  .image-container {
+    width: 400px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  /* Styles for the image */
+  .image-container img {
+    width: 100%; /* Add this line to ensure the image takes up the full width of the container */
+    animation: slide 4s infinite;
+    cursor: pointer;
+  }
+  
+  .image-container img.paused {
+    animation-play-state: paused;
+  }
+  

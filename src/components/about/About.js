@@ -1,22 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import team1 from '../../assets/team1.jpg';
-import team2 from '../../assets/team2.jpg';
-import team3 from '../../assets/team3.jpg';
+import krishanlogo from '../../assets/krishanlogo.png';
+import Raghavlogo from '../../assets/Raghavlogo.png';
+import hanilogo from '../../assets/hanilogo.png';
 import './about.css';
 
 const About = () => {
   const teamMembers = [
-    { id: 1, name: 'Krishan Sharma', role: 'Cofounder', image: team1, socialMedia: { linkedin: 'https://www.linkedin.com/profile1', twitter: 'https://www.twitter.com/profile1', instagram: 'https://www.instagram.com/profile1' } },
-    { id: 2, name: 'Raghav Gandhi', role: 'Cofounder', image: team2, socialMedia: { linkedin: 'https://www.linkedin.com/profile2', twitter: 'https://www.twitter.com/profile2', instagram: 'https://www.instagram.com/profile2' } },
-    { id: 3, name: 'Hani Chaudary', role: 'Design & BackEnd', image: team3, socialMedia: { linkedin: 'https://www.linkedin.com/profile3', twitter: 'https://www.twitter.com/profile3', instagram: 'https://www.instagram.com/profile3' } },
+    { id: 1, name: 'Krishan Sharma', role: 'Cofounder', image: krishanlogo, socialMedia: { linkedin: 'https://www.linkedin.com/profile1', twitter: 'https://www.twitter.com/profile1', instagram: 'https://www.instagram.com/profile1' } },
+    { id: 2, name: 'Raghav Gandhi', role: 'Cofounder', image: Raghavlogo, socialMedia: { linkedin: 'https://www.linkedin.com/profile2', twitter: 'https://www.twitter.com/profile2', instagram: 'https://www.instagram.com/profile2' } },
+    { id: 3, name: 'Hani Chaudary', role: 'Design & BackEnd', image: hanilogo, socialMedia: { linkedin: 'https://www.linkedin.com/profile3', twitter: 'https://www.twitter.com/profile3', instagram: 'https://www.instagram.com/profile3' } },
   ];
 
   return (
     <div className="about-page">
-      <h1>About Devcon</h1>
-      <p>At DevCom, we believe in the power of connections, the pursuit of knowledge, and the endless possibilities that come with personal and professional growth. Our platform is designed to bring together student communities from various disciplines, creating an inclusive and supportive environment where individuals can connect, learn, and grow.</p>
+      <h1>About Webuildcomm</h1>
+      <p>At Webuildcomm, we believe in the power of connections, the pursuit of knowledge, and the endless possibilities that come with personal and professional growth. Our platform is designed to bring together student communities from various disciplines, creating an inclusive and supportive environment where individuals can connect, learn, and grow.</p>
 
       <h2>Our Team</h2>
       <ul className="team-list">

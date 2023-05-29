@@ -14,7 +14,7 @@ const Devcom = () => (
     {/* devcom-feature section */}
     <div className="devcom-feature">
       <Feature
-        title="What is Devcom ?"
+        title="What is Webuildcomm?"
         text="Bring your student community together, learn from each other, and grow into future leaders."
       />
     </div>
@@ -27,22 +27,6 @@ const Devcom = () => (
 
     </div>
 
-    {/* devcom-container section
-    <div className="devcom-container">
-      <Feature
-        title="Connect with like-minded students."
-        text="We so opinion friends me message as delight. Whole front do of plate heard oh ought."
-      />
-      <Feature
-        title="Grow your personal brand."
-        text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
-      />
-      <Feature
-        title="Grow your personal brand."
-        text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
-      />
-    </div>
-     */}
   </div>
   
 );

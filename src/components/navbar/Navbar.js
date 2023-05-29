@@ -11,19 +11,21 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-links">
         <div className="navbar-links-logo">
-          <Link to="/">NEXUS</Link>
+          <Link to="/">Webuildcomm</Link>
         </div>
         <div className="navbar-links-container">
           <Link to="/community">Community</Link>
           <Link to="/events">Events</Link>
           <Link to="/about">About</Link>
-     {/*     <Link to="/career">Career</Link> */}
+          {/* <Link to="/career">Career</Link> */}
         </div>
       </div>
 
       <div className="navbar-sign">
-        <Link to="/signin">Sign in</Link>
-        <button type="button">Sign up</button>
+        <Link to="/">Sign in</Link>
+        <Link to="/signup">
+          <button type="button">Sign up</button>
+        </Link>
       </div>
 
       <div className="navbar-menu">
@@ -44,14 +46,24 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="navbar-menu-container scale-up-center">
             <div className="navbar-menu-container-links">
-              <Link to="/community" onClick={() => setToggleMenu(false)}>Community</Link>
-              <Link to="/events" onClick={() => setToggleMenu(false)}>Events</Link>
-              <Link to="/about" onClick={() => setToggleMenu(false)}>About</Link>
-              <Link to="/career" onClick={() => setToggleMenu(false)}>Career</Link>
+              <Link to="/community" onClick={() => setToggleMenu(false)}>
+                Community
+              </Link>
+              <Link to="/events" onClick={() => setToggleMenu(false)}>
+                Events
+              </Link>
+              <Link to="/about" onClick={() => setToggleMenu(false)}>
+                About
+              </Link>
+              <Link to="/career" onClick={() => setToggleMenu(false)}>
+                Career
+              </Link>
             </div>
             <div className="navbar-menu-container-links-sign">
               <Link to="/signin">Sign in</Link>
-              <button type="button">Sign up</button>
+              <Link to="/signup">
+                <button type="button">Sign up</button>
+              </Link>
             </div>
           </div>
         )}

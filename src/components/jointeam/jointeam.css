@@ -1,0 +1,53 @@
+.jointeam {
+  text-align: center;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.heading {
+  font-size: 64px;
+  margin-bottom: 10px;
+  padding: 15px;
+  color:rgb(45, 52, 48);
+}
+
+.intro-text {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+
+
+.hire-button {
+  background-color: #595a5b;
+  color: #c1a7a7;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #110e0e;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hire-button:hover {
+  background-color: #636b73;
+}
+
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .section-heading {
+    font-size: 18px;
+  }
+
+  .hire-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}

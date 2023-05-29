@@ -8,7 +8,7 @@
   background: var(--color-footer);
   background: -moz-radial-gradient(
     circle at 100% -100%,
-    hsl(210, 56%, 10%) 25%,
+    hsl(207, 6%, 72%) 25%,
     rgb(233, 238, 243) 85%,
     rgb(208, 211, 213) 100%
   );
@@ -34,75 +34,82 @@
     circle at 30% -100%,
     #98a3af 25%,
     rgb(208, 215, 221) 85%,
-    rgb(186, 203, 185) 100%
+    rgb(217, 226, 216) 100%
   );
   filter: drop-shadow(0px 4px 4px rgba(48, 39, 39, 0.25));
 }
 
-  
-  .hero-section .content {
+.hero-section .content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
   width: 100%;
   max-width: 1000px;
-  }
-  
-  .hero-section .content p {
+}
+
+.hero-section .content p {
   font-size: 2.5rem;
   text-align: left;
   margin-left: -22rem;
   margin-bottom: -570px;
   color: #333;
-  }
-  
-  .hero-section h1 {
+}
+
+.hero-section h1 {
   font-size: 60px;
   font-weight: bold;
   text-align: left;
   white-space: pre-line;
   margin-left: 2rem;
   color: #333;
-  }
-  
-  .hero-section .image {
+}
+
+.hero-section .image {
+  padding-top: 50px;
   width: 100%;
   max-width: 600px;
   height: max-content;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  @media (max-width: 768px) {
+ /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); */
+}
+
+@media (max-width: 768px) {
   .hero-section {
-  padding: 0;
-  height: auto;
+    padding: 0;
+    height: auto;
   }
-  
+
   .hero-section .content {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
-  
+
   .hero-section .content p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-left: 0;
-  margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
   }
-  
+
   .hero-section h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin-left: 0;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
-  
+
   .hero-section .image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 2rem;
   }
+
+  /* Hover effect */
+  .hero-section:hover .image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
+}

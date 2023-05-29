@@ -30,14 +30,14 @@
   background: radial-gradient(
     circle at 30% -100%,
     #98a3af 25%,
-    rgb(47, 73, 84) 85%,
+    rgb(66, 73, 76) 85%,
     rgb(177, 205, 207) 100%
   );
   filter: drop-shadow(0px 4px 4px rgba(48, 39, 39, 0.25));
 }
 
 .devcom-feature {
-  display:contents;
+  display: contents;
   text-align: center;
   font-size: 25px;
   color: rgb(55, 46, 46);
@@ -45,7 +45,8 @@
 
 /* Customizing feature component as per needs */
 .devcom-feature .devcom-container__feature {
-  margin: 0;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* Customizing feature component as per needs */
@@ -109,32 +110,30 @@
 
   .devcom-heading p {
     margin-top: 1rem;
- 
   }
 }
 
 @media screen and (max-width: 650px) {
-/* Customizing feature component as per needs */
-.devcom-feature .devcom-container__feature {
-flex-direction: column;
-}
+  /* Customizing feature component as per needs */
+  .devcom-feature .devcom-container__feature {
+    flex-direction: column;
+  }
 
-/* Customizing feature component as per needs */
-.devcom-feature .devcom-container_feature-text {
-margin-top: 0.5rem;
-}
+  /* Customizing feature component as per needs */
+  .devcom-feature .devcom-container_feature-text {
+    margin-top: 0.5rem;
+  }
 
-.devcom-heading h1 {
-font-size: 28px;
-line-height: 40px;
-}
+  .devcom-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 @media screen and (max-width: 350px) {
-/* Customizing feature component as per needs */
-.devcom-container .devcom-container__feature {
-margin: 1rem 0;
-min-width: 100%;
+  /* Customizing feature component as per needs */
+  .devcom-container .devcom-container__feature {
+    margin: 1rem 0;
+    min-width: 100%;
+  }
 }
-}
-
