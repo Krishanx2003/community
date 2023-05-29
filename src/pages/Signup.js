@@ -1,5 +1,5 @@
 import React from 'react';
-import SignupForm from '../components/Signup';
+import Signup from '../components/Signup';
 
 const Signup = () => {
   const handleSignup = (formData) => {
@@ -11,7 +11,7 @@ const Signup = () => {
   return (
     <div>
       <h1>Signup Page</h1>
-      <SignupForm onSignup={handleSignup} />
+      <Signup onSignup={handleSignup} />
     </div>
   );
 };
